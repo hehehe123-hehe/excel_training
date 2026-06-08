@@ -1,6 +1,6 @@
 # 📊 Excel Practice — Easy Level Complete
 
-> A documented collection of 12 completed Easy-level Excel exercises from [BelajarExcel.id](https://belajarexcel.id/xl-test/), covering real-world administrative scenarios from payroll and sales administration to text manipulation and housing credit calculations.
+> A documented collection completed Excel exercises from [BelajarExcel.id](https://belajarexcel.id/xl-test/), covering real-world administrative scenarios from payroll and sales administration to text manipulation and housing credit calculations.
 
 ---
 
