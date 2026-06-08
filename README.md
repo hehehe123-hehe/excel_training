@@ -17,9 +17,9 @@ The exercises simulate real workplace data scenarios: employee payroll, sales re
 | Level | Exercises | Status |
 |-------|-----------|--------|
 | 🟢 Easy | 12 / 12 | ✅ Complete |
-| 🟡 Medium | 0 / 14 | 🔄 Up next |
-| 🟠 Hard | 0 / 11 | ⏳ Planned |
-| 🔴 Extreme | 0 / 7 | ⏳ Planned |
+| 🟡 Medium | 0 / 15 | 🔄 On going|
+| 🟠 Hard | 0 / 12 | ⏳ Planned |
+| 🔴 Extreme | 0 / 8 | ⏳ Planned |
 | 🏆 Championship | 0 / 5 | ⏳ Planned |
 
 ---
