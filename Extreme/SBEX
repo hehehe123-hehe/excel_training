@@ -1,0 +1,41 @@
+# 🔴 Extreme Level — Excel Practice (⭐⭐⭐⭐)
+
+Completed Extreme-level exercises from BelajarExcel.id XL-Test, featuring the most complex single-formula challenges: anagram-based lookups, Caesar Cipher decoding, dynamic array grid analysis, unstructured transaction parsing, and consecutive-lateness point calculations.
+
+All 8 exercises are complete. Each `.xlsx` file contains the original question sheet and an automated XL-Test checker — open the file and navigate to the XL-Test sheet to verify answers.
+
+---
+
+## Exercise Summaries
+
+| Code | Title | Scenario | Skills Covered |
+|---|---|---|---|
+| SBEX001 | VLOOKUP & HLOOKUP Extreme | Electronics store sales — look up customer name (VLOOKUP), product name and unit price (VLOOKUP), apply tiered quantity discounts from an HLOOKUP discount table, assign a bonus item (iPhone XR / Samsung S20 / Mendoan) via VLOOKUP based on QTY range, fetch bonus price, and compute Net Sales; aggregate total and average QTY and Net Sales | `VLOOKUP`, `HLOOKUP`, `IF`, `SUM`, `AVERAGE` |
+| SBEX002 | COUNTIF Extreme | Student dataset — answer 6 counting questions each using exactly 1 COUNTIF formula: names with 3+ words, students from Bandung or Jakarta combined, age range `>3`, male students (♂️ symbol), female students (♀️ symbol), and students with Pindah `>` school status — all from a single dataset with gender and status embedded inside name and symbol columns | `COUNTIF` with wildcard `* * * |*`, array `{"Bandung";"Jakarta"}`, `=>3`, `*♂️`, `*♀️`, `=>` |
+| SBEX003 | LEFT MID RIGHT Extreme | Two-part text extraction challenge — (1) strip variable-length leading zeros from codes like `000000000B7239KLM4-2000DO` to extract the alphanumeric segment and the 4-digit year after the dash, using only LEFT/MID/RIGHT; (2) split concatenated Name+Number strings (e.g. `BudiSantoso86011224`) where the boundary between letters and digits is variable | `LEFT`, `MID`, `RIGHT`, `LEN`, `FIND`, `MIN`, `SEARCH` |
+| SBEX004 | Total Terlambat | Attendance analytics from raw time-stamp data — compute per-student: (1) days on time (≤07:00), (2) days late (>07:00), (3) longest consecutive-late streak, (4) number of separate consecutive-late runs, (5) total lateness points where solo lates = 1 pt and chain lates = 1 pt for day 1 + 2 pts for each subsequent day | `COUNTIF`, `FREQUENCY`, `IF` array, `LET`, `MAX`, `SUMPRODUCT`, column-offset pattern matching |
+| SBEX005 | Extract Transaksi | Unstructured banking transaction string parsing — extract from free-text e-banking descriptions (e.g. `TRSF E-BANKING CR WS8821 4421200 ref pusat MARTA-INDRIANI transaksi tgl10`): (1) full name in UPPERCASE with spaces replacing hyphens, (2) numeric transaction value (5+ digits), (3) valid date in April 2025 from `tglN` tag, (4) WS code | `REGEXEXTRACT`, `SUBSTITUTE`, `VALUE`, `DATE`, `MID`, `FIND` |
+| SBEX006 | Fungsi Text / String Extreme | Letter-code + raw-name processing across 10 columns — all answers must use only the permitted text functions (no IF, VLOOKUP, etc.): clean and Proper-case a raw messy name; extract year, month, and day from a padded code string; build a valid date serial; count letter "A" occurrences; extract two-letter initials; build an Indonesian-locale date stamp (e.g. `AS19-Agu-2024`); grade by score with nested TEXT format codes; mask middle characters with asterisks preserving first and last of each word | `TRIM`, `SUBSTITUTE`, `PROPER`, `CHAR(160)`, `MID`, `RIGHT`, `TEXT` with `[$-id-ID]`, `LEN`, `FIND`, `LEFT`, `REPT`, `REPLACE`, `CODE`, `UPPER` |
+| SBEX007 | Data Karyawan & Slip Gaji (Anagram) | Two-layer cipher lookup — employee names in the dataset are anagrams of the real employee names; job titles are further encoded with Caesar Cipher +1 shift; solve: (1–3) match anagrammed name to real employee via sorted-letter key to retrieve city, DOB, and join date; (4–5) decode the Caesar-shifted job-title anagram back to real job name and look up its code; (6–7) convert salary and bonus stored as exponent strings (e.g. `G2E5`, `B1E5`) to actual numbers; (8) sum total pay | `LET`, `BYROW`, `LAMBDA`, `SORT`, `TEXTJOIN`, `MID`, `SEQUENCE`, `MAP`, `CODE`, `CHAR`, `XLOOKUP`, `FIND`, `VALUE` |
+| SBEX008 | Data Grid | Dynamic array grid challenges on a 30-column × 30-row numeric grid — no helper columns; 1 formula per question: (1) sum cells from address list using dynamic array; (2) subtraction chain from address list; (3) top-15 row sums ranked largest to smallest; (4) top-15 column sums ranked; (5) top-15 rows by count of even numbers; (6) top-15 sums of every 2×2 sub-grid; (7) top-15 sums of every 4×4 sub-grid; (8) sum of main diagonal values D1→D10 | `INDIRECT`, `TEXTSPLIT`, `MAP`, `LAMBDA`, `MMULT`, `SEQUENCE`, `MOD`, `LARGE`, `SORT`, `BYROW`, `BYCOL`, `DROP`, `TAKE` |
+
+---
+
+## Skills Covered
+
+| Category | Functions & Techniques |
+|---|---|
+| Dynamic Array | `SEQUENCE`, `SORT`, `FILTER`, `BYROW`, `BYCOL`, `MAP`, `LAMBDA`, `LET`, `DROP`, `TAKE`, `MMULT`, `LARGE` |
+| Text (Permitted Set) | `LEFT`, `MID`, `RIGHT`, `LEN`, `FIND`, `SEARCH`, `TRIM`, `SUBSTITUTE`, `PROPER`, `UPPER`, `LOWER`, `TEXT`, `REPT`, `REPLACE`, `CHAR`, `CODE`, `CONCAT`, `TEXTJOIN`, `TEXTSPLIT`, `CLEAN` |
+| Lookup | `VLOOKUP`, `HLOOKUP`, `XLOOKUP`, `INDEX`/`MATCH`, `INDIRECT` |
+| Conditional Aggregate | `COUNTIF` with wildcards and arrays, `SUMPRODUCT`, `FREQUENCY`, `MAX`, `MIN` |
+| Regex | `REGEXEXTRACT` |
+| Date | `DATE`, Indonesian locale `TEXT` with `[$-id-ID]`, serial date arithmetic |
+| Cipher / Encoding | Caesar Cipher decode via `CODE`/`CHAR`, anagram match via sorted-letter key, exponent string to number conversion |
+| Array Math | Column-offset consecutive pattern, 2×2 and 4×4 sub-grid summation, diagonal sum |
+
+---
+
+## Source
+
+All exercises are from [BelajarExcel.id — XL-Test](https://belajarexcel.id/xl-test/), a platform providing structured Excel practice with automated answer validation.
